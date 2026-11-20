@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>En Boka de Todos | Comidas Rápidas</title>
+    <link rel="icon" type="image/jpeg" href="img/LogoEmpresa.jpeg">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header class="cabecera" >
+        <div class="marca">
+        <img src="img/LogoEmpresa.jpeg" alt="" class="logo">
+        <p class="eslogan">El sabor que nos une</p>
+        </div>  
+        <nav class="menucontenedor">
+            <a href="#inicio">Inicio</a>
+            <a href="#promociones">Promociones</a>
+            <a href="#menu">Menú</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+     <section id="inicio" class="portada">
+        <video class="videofondo"autoplay muted loop playsinline> 
+            <source src="Video/VideoInicial.mp4" type="video/mp4">
+        </video>
+     </section>
+     <section class="seccion-boton">
+        <div class="boton-debajo">
+            <a href="#menu" class="boton" >CONOCE NUESTRO MENÚ</a>
+        </div>
+     </section>
+     <section id="promociones" class="promo">
+        <h2>PROMOCIÓN DEL DÍA</h2>
+        <div class="carrusel">
+            <div class="carrusel-pista">
+               <div class="promocion activa">
+                <img src="img/promo/promo1.jpeg" alt="">
+            
+                <div class="textopromo">
+                    <h3>¡MUCHO SABOR PARA COMPARTIR!</h3>
+                    <P>Descubre nuestras imperdibles promociones.</P>
+                </div>
+                </div>    
+                <div class="promocion">
+                <img src="img/promo/promo2.jpeg" alt="">
+                <div class="textopromo">
+                    <h3>¡MUCHO SABOR PARA COMPARTIR!</h3>
+                    <P>Descubre nuestras imperdibles promociones.</P>
+                </div>
+                </div>
+                <div class="promocion">
+                <img src="img/promo/promo3.jpeg" alt="">
+                <div class="textopromo">
+                    <h3>¡MUCHO SABOR PARA COMPARTIR!</h3>
+                    <P>Descubre nuestras imperdibles promociones.</P>
+                </div>
+                </div>
+                <div class="promocion">
+                <img src="img/promo/promo4.jpeg" alt="">
+                <div class="textopromo">
+                    <h3>¡MUCHO SABOR PARA COMPARTIR!</h3>
+                    <P>Descubre nuestras imperdibles promociones.</P>
+                </div>
+                </div>
+                <div class="promocion">
+                <img src="img/promo/promo5.jpeg" alt="">
+                <div class="textopromo">
+                    <h3>¡MUCHO SABOR PARA COMPARTIR!</h3>
+                    <P>Descubre nuestras imperdibles promociones.</P>
+                </div>
+                </div>
+            </div>
+              <button class="flecha anterior" onclick="anteriorPromocion()"> &#10094;
+              </button>
+              <button class="flecha siguiente" onclick="siguientePromocion()">&#10095;
+              </button>
+        </div>
+            <div class="indicadores">
+                 <span class="punto activo" onclick="mostrarPromocion(0)"></span>
+                 <span class="punto" onclick="mostrarPromocion(1)"></span>
+                 <span class="punto" onclick="mostrarPromocion(2)"></span>
+                 <span class="punto" onclick="mostrarPromocion(3)"></span>
+                 <span class="punto" onclick="mostrarPromocion(4)"></span>
+                 <span class="punto" onclick="mostrarPromocion(5)"></span>
+                 
+            </div>
+     </section>
+
+     <section id="menu" class="seccionmenu">
+        <h2>NUESTRO MENÚ</h2>
+        <P>Descubre nuestras deliciosas opciones y disfruta cada bocado.</P>
+        <div class="contenedor">
+            <div class="tarjeta">
+                <img src="img/picada.jpeg" alt="">
+                <h3>PICADAS</h3>
+            </div>
+            <div class="tarjeta">
+                <img src="img/Chuzo.jpeg" alt="">
+                <h3>CHUZOS</h3>
+            </div>
+            <div class="tarjeta">
+                <img src="img/Desgranado.jpeg" alt="">
+                <h3>SALCHIPAPA</h3>
+            </div>
+            <div class="tarjeta tarjeta-mas">
+                <h3>Y MUCHO MÁS</h3>
+            <div class="carrusel-mas">
+                <div class="pista-mas">
+                <img src="img/Chorizo.jpeg" alt="">
+                <img src="img/Chuzo2.jpeg" alt="">
+                <img src="img/Hamburguesa2.jpeg" alt="">
+                <img src="img/Hamburguesa3.jpeg" alt="">
+                <img src="img/picada2.jpeg" alt="">
+                <img src="img/piPersonal.jpeg" alt="">
+                </div>
+                <button class="flecha-mas anterior-mas"
+                    onclick="anteriorMas()">&#10094;
+                </button>
+                <button class="flecha-mas siguiente-mas"
+                    onclick="siguienteMas()">&#10095;
+                </button>
+            </div>
+            </div>
+        </div>
+        <div class="ver-carta">
+            <p>¿Deseas conocer todas nuestras opciones?</p>
+            <a href="carta.html">VER CARTA COMPLETA</a>
+        </div>
+     </section>
+     <section id="contacto" class="contacto">
+        <h2>CONTÁCTANOS</h2>
+        <p>¡Estamos listos para atenderte y llevarte el sabor hasta tu casa!</p>
+        <div class="contenedor-contacto">
+            <div class="dato-contacto">
+                <h3>📍VISÍTANOS</h3>
+                <p>Carrera 80 B # 100A-07</p>
+                <p>Barrio Arboleda,Apartadó</p>
+                <a href="https://maps.app.goo.gl/vkYUgjb7uKTyTcqn8" target="_blank">
+                    VER UBICACIÓN EN GOOGLE MAPS
+                </a>
+            </div>
+            <div class="dato-contacto">
+                <h3>📲DOMICILIOS</h3>
+                <p>WhatsApp 322 645 8011</p>
+                <a href="https://wa.me/573226458011" target="_blank">
+                PEDIR POR WHATSAPP
+            </a>
+            </div>
+            <div class="dato-contacto">
+                <h3>📞LLÁMANOS</h3>
+                <p>300 264 0089</p>
+                <a href="tel:+573002640089">LLAMAR AHORA</a>
+            </div>
+        </div>
+
+     </section>
+    <script>
+    const pista = document.querySelector(".carrusel-pista");
+    const promociones = document.querySelectorAll(".promocion");
+    const puntos = document.querySelectorAll(".punto");
+
+    let indice = 0;
+    let temporizador;
+
+    function mostrarPromocion(numero) {
+        indice = numero;
+
+        pista.style.transform = `translateX(-${indice * 100}%)`;
+
+        puntos.forEach((punto, i) => {
+            punto.classList.toggle("activo", i === indice);
+        });
+
+        reiniciarTemporizador();
+    }
+
+    function siguientePromocion() {
+        indice = (indice + 1) % promociones.length;
+        mostrarPromocion(indice);
+    }
+
+    function anteriorPromocion() {
+        indice = (indice - 1 + promociones.length) % promociones.length;
+        mostrarPromocion(indice);
+    }
+
+    function reiniciarTemporizador() {
+        clearInterval(temporizador);
+        temporizador = setInterval(siguientePromocion, 5000);
+    }
+
+    reiniciarTemporizador();
+    const pistaMas = document.querySelector(".pista-mas");
+const fotosMas = document.querySelectorAll(".pista-mas img");
+
+let indiceMas = 0;
+let temporizadorMas;
+
+function mostrarMas() {
+    pistaMas.style.transform =
+        `translateX(-${indiceMas * 100}%)`;
+}
+
+function siguienteMas() {
+    indiceMas = (indiceMas + 1) % fotosMas.length;
+    mostrarMas();
+}
+
+function anteriorMas() {
+    indiceMas = (indiceMas - 1 + fotosMas.length) % fotosMas.length;
+    mostrarMas();
+}
+
+temporizadorMas = setInterval(siguienteMas, 4000);
+</script>
+</body>
+</html>
